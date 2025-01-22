@@ -71,7 +71,7 @@ def train_protein_model():
         return {"r2": r2}
 
     timestamp_str = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    output_dir = f"esm2_t6_8M-finetuned-lora_{timestamp_str}"
+    output_dir = f"ESOL-esm2_t6_8M-finetuned-lora_{timestamp_str}"
 
     args = TrainingArguments(
         output_dir,
