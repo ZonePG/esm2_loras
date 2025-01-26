@@ -77,7 +77,7 @@ def train_protein_model():
         output_dir,
         evaluation_strategy="epoch",
         learning_rate=3e-4,
-        per_device_train_batch_size=16,
+        per_device_train_batch_size=8,
         num_train_epochs=5,
         logging_steps=10,
         load_best_model_at_end=True,

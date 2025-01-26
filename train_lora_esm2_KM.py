@@ -81,9 +81,9 @@ def train_protein_model():
     args = TrainingArguments(
         output_dir,
         evaluation_strategy="epoch",
-        learning_rate=3e-4,
+        learning_rate=1e-3,
         per_device_train_batch_size=256,
-        num_train_epochs=5,
+        num_train_epochs=20,
         logging_steps=10,
         load_best_model_at_end=True,
         metric_for_best_model="r2",
